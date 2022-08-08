@@ -1,0 +1,3 @@
+<title>{{ .Title }}</title>
+{{ $style := resources.Get "site.scss" | resources.ToCSS | resources.Minify | resources.Fingerprint }}
+<link rel="stylesheet" href="{{ $style.RelPermalink }}">

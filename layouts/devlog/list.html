@@ -1,0 +1,30 @@
+{{ define "main" }}
+<main>
+
+  <header>
+    <h1>Main Gauche Games devlog</h1>
+  </header>
+
+  <div>
+    {{ range .Pages }}
+    <article class='preview-list-item'>
+      <div class='post-title'>
+        <h3>
+          <a href="{{.RelPermalink}}">{{.Title}}</a>
+        </h3>
+        <p>
+          <span class="post-date">
+            {{.Date.Format "January 2, 2006"}}
+          </span>
+        </p>
+        <div>
+          <div>{{.Summary}}</div>
+          <a class="button" href="{{.RelPermalink}}">Keep Reading →</a>
+        </div>
+      </div>
+    </article>
+    {{ end }}
+  </div>
+
+</main>
+{{ end }}

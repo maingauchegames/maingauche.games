@@ -1,0 +1,39 @@
+{{ define "main" }}
+<main id="main">
+  <header>
+    <h1 id="title">{{ .Title }}</h1>
+    <h4 id="date">{{ .Date.Format "January 2, 2006" }}</h4>
+  </header>
+
+  <article id="content">
+    {{ .Content }}
+  </article>
+</main>
+
+<!-- TODO
+<aside>
+  <h4>Tags</h4>
+  {{ with .Params.tags }}
+  <ul id="tags">
+    {{ range . }}
+    <li><a href='{{ "tags/" | absURL }}{{ . | urlize }}'>{{ . }}</a></li>
+    {{ end }}
+  </ul>
+  {{ end }}
+</aside>
+-->
+
+<aside>
+  {{ with .PrevInSection }}
+  Previous: <a class="previous" href="{{.RelPermalink}}">{{.Title}}</a>
+  {{ end }}
+
+  {{ if (and .PrevInSection .NextInSection) }}
+  |
+  {{ end }}
+
+  {{ with .NextInSection }}
+  Next: <a class="next" href="{{.RelPermalink}}">{{.Title}}</a>
+  {{ end }}
+</aside>
+{{ end }}

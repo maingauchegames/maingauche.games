@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    {{- partial "head.html" . -}}
+    {{- block "custom-head" . }}{{- end }}
+</head>
+
+<body>
+    <div class="container">
+        {{- partial "nav.html" . -}}
+
+        <div id="content">
+            {{- block "main" . }}{{- end }}
+        </div>
+
+        {{- partial "footer.html" . -}}
+    </div>
+</body>
+
+</html>
