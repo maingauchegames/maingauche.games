@@ -32,7 +32,7 @@ If you play *rePlace* (try it, it’s fun!), you’ll see that a lot of the core
 
 *rePlace*, however, was supposed to be a twin-stick shooter. Check out the pew-pew gun sounds and the pulse-pounding soundtrack! We thought, “hey, we’d be terrible a making a puzzle game.”
 
-So we turned it into a puzzle game. In the intervening six months, the following occurred:
+And so then we turned it into a puzzle game! In the intervening six months, the following occurred:
 
 ## No more twin-stick
 
