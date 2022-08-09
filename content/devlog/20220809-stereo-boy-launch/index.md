@@ -58,9 +58,9 @@ We learned enough Blender (and bought enough commodity 3D models) to make neat-l
 
 {{< video-tag "./camera-sm-60fps.mov" >}}
 
-We added a player-controlled orbit cam. With all of said fancy environments, we realized that *rePlace*'s rigidly locked camera wasn’t providing the most flattering look.
+We added a player-controlled orbit cam. With said neat-looking environments, we realized that *rePlace*'s rigidly locked camera wasn’t providing the most flattering look.
 
-Of course, this ended up being an extremely consequential decision that caused a huge number of gameplay issues, some of which we’re not sure we’ve solved all that convincingly.
+Of course, this ended up being an extremely consequential decision that caused a huge number of gameplay issues, some of which we’re not sure have been solved very well.
 
 ## Narrative
 
@@ -72,7 +72,7 @@ We somehow convinced ourselves to write a minor space opera, all for a game that
 
 {{< video-tag "./legs.mov" >}}
 
-We took cut Blit’s legs off. Walk cycles are hard!
+We cut Blit’s legs off. Walk cycles are hard!
 
 ---
 
