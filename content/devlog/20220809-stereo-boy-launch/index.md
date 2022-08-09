@@ -78,7 +78,7 @@ We cut Blit’s legs off. Walk cycles are hard!
 
 Last but certainly not least, we managed to find a name that does not put capital letters in the middle of words.
 
-One thing we *didn’t* do in the last six months was talk about the game very much. We’re doing this whole indie marketing thing backward. Conventional wisdom is to publish your devlog *while* you’re making your game, but we waited all the way until launch day to publish our first post.
+One thing we *didn’t* do in the last six months was talk about the game very much. We’re doing this whole indie marketing thing backward. Conventional wisdom is to publish your devlog *while* you’re making your game, but we waited until launch day to publish our first post.
 
 But fear not! We’ve got plans for more in-depth posts about the development process. If nothing else, we have a bunch of hilarious mid-development screenshots to share. Follow us on the socials for more:
 
