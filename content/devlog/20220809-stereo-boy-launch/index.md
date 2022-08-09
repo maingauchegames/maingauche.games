@@ -14,7 +14,9 @@ You play a robot called Blit who’s crash-landed on an alien planet and trying 
 
 ## Teleportation
 
-Probably the first thing you notice about the game is that the screen is split in half. The two halves are parallel worlds. You can teleport from your current spot in one world to the same relative location in the other, as long as there’s a safe place to land. That means no pits or walls.
+The central conceit of *Stereo Boy* is that Blit can teleport between parallel worlds.
+
+To illustrate that, we split the viewport in half. Each half is one of our parallel worlds. You can teleport from your current spot in one world to the same relative location in the other, as long as there’s a safe place to land. That means no pits or walls.
 
 {{< video-tag "./teleport-sm-60fps.mov" >}}
 
