@@ -2,6 +2,9 @@
 title: "Stereo Boy is released!"
 date: 2022-08-09
 draft: false
+tags:
+- stereoboy
+summary: In which we launch a video game
 ---
 
 We launched our first commercial title today! It’s called *[Stereo Boy](https://stereoboygame.com)*.
@@ -9,6 +12,8 @@ We launched our first commercial title today! It’s called *[Stereo Boy](https:
 You play a robot called Blit who’s crash-landed on an alien planet and trying to get home. There are puzzles. You can [grab it on Steam](https://store.steampowered.com/app/2073530/Stereo_Boy/) for eight bucks, even less if you catch the launch sale. Here’s a trailer:
 
 {{< youtube Gxo9DIQfEwU >}}
+
+Pretty cool, right? Let's talk a bit about the origin story!
 
 <!--more-->
 
@@ -20,7 +25,7 @@ To illustrate that, we split the viewport in half. Each half is one of our paral
 
 {{< video-tag "./teleport-sm-60fps.mov" >}}
 
-This is a tidy mechanic for making mazes! You can put bridges and ramps on the left side to access hard-to-reach spots on the right side. Throw in some technobabble about quantum mechanics, and bam! You’ve got yourself an intriguing and reasonably-priced piece of electronic entertainment.
+This is a tidy mechanic for making mazes! You can put bridges and ramps on the left side to access hard-to-reach spots on the right side. Or, the other way around. Throw in some technobabble about quantum mechanics, and bam! You’ve got yourself an intriguing and reasonably-priced piece of electronic entertainment.
 
 {{< video-tag "./puzzles-sm-60fps.mov" >}}
 
@@ -28,25 +33,27 @@ This is a tidy mechanic for making mazes! You can put bridges and ramps on the l
 
 *Stereo Boy* was our attempt to productionize the magnificently unpronounceable [*rePlace*](https://maingauchegames.itch.io/replace), a browser game we made for Global Game Jam 2022.
 
-If you play *rePlace* (try it, it’s fun!), you’ll see that a lot of the core mechanics were right there from the beginning. The discerning fan may even notice some suspiciously familiar visual effects and sounds.
+If you play *rePlace* (try it, it’s fun!), you’ll see that a lot of *Stereo Boy*'s core mechanics were right there from the beginning. The discerning fan may even notice some suspiciously familiar visual effects and sounds.
 
 ![](./replace.png)
 
 *rePlace*, however, was supposed to be a twin-stick shooter. Check out the pew-pew gun sounds and the pulse-pounding soundtrack! We thought, “hey, we’d be terrible a making a puzzle game.”
 
-And so then we turned it into a puzzle game! In the intervening six months, the following occurred:
+And then we turned it into a puzzle game! In the intervening six months, the following occurred:
 
 ## No more twin-stick
 
 {{< video-tag "./combat-sm-60fps.mov" >}}
 
-We ripped out the twin-stick shooting; *Stereo Boy*’s shooting is way more deliberate and slow-paced. We even thought about getting rid of combat entirely. We were worried that people would think the combat was weird next to the puzzles. I might even agree with that a little bit, but we just decided to allow ourselves to be weird.
+We ripped out the twin-stick input. Shooting in *Stereo Boy* is way more deliberate and slow-paced.
+
+At one point, we even thought about getting rid of combat entirely. We were worried that people would think the combat would seem weird next to the puzzles. I might even agree with that a little bit, but we just decided to allow ourselves to be weird. Not a bad way to live life in general!
 
 ## Block-pushing for days
 
 {{< video-tag "./teleblock-sm-60fps.mov" >}}
 
-We added pushable blocks, one of the most insidious things you can introduce to a development cycle. It is truly the [ice-nine](https://en.wikipedia.org/wiki/Cat%27s_Cradle) of game design. Pretty soon our game about teleporting and shooting became a game about pushable blocks.
+We added pushable blocks, one of the most insidious things you can introduce to a development cycle. It is truly the [ice-nine](https://en.wikipedia.org/wiki/Cat%27s_Cradle) of game design. Pretty soon our game about teleporting and shooting became a game about pushing blocks.
 
 You want teleporting? Add teleporting to the pushable blocks. You still want shooting? *Really??* Make it so you can shoot the pushable blocks.
 
@@ -82,7 +89,9 @@ Last but certainly not least, we managed to find a name that does not put capita
 
 One thing we *didn’t* do in the last six months was talk about the game very much. We’re doing this whole indie marketing thing backward. Conventional wisdom is to publish your devlog *while* you’re making your game, but we waited until launch day to publish our first post.
 
-But fear not! We’ve got plans for more in-depth posts about the development process. If nothing else, we have a bunch of hilarious mid-development screenshots to share. Follow us on the socials for more:
+But fear not! We’ve got plans for more in-depth posts about the development process. If nothing else, we have a bunch of hilarious mid-development screenshots to share.
+
+To keep up, follow us on your preferred social network:
 
 - [Discord](https://maingauche.games/discord)
 - [Twitter](https://twitter.com/maingauchegames)
