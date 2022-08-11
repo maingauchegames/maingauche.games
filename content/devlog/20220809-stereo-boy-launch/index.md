@@ -4,7 +4,7 @@ date: 2022-08-09
 draft: false
 tags:
 - stereoboy
-summary: In which we launch a video game
+description: In which we launch a video game
 ---
 
 We launched our first commercial title today! It’s called *[Stereo Boy](https://stereoboygame.com)*.
