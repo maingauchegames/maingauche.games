@@ -11,8 +11,8 @@ Our launch day stream was really fun! We got to play Stereo Boy, answer question
 
 {{< youtube quqBDYGTI7I >}}
 
-Watch closely for some fun screenshots that show how far the game as come along since its inception as a game jam game.
+Watch for some fun screenshots that show how far the game has come since its inception as a game jam entry.
 
-We stream and post videos about game dev from time to time. Follow us on [Twitch](https://twitch.tv/maingauchegames) and [YouTube](https://www.youtube.com/channel/UCPMLP_iuTLQWxCVYFNt40WA) for more!
+By the way: we stream and post videos about game dev from time to time. Follow us on [Twitch](https://twitch.tv/maingauchegames) and [YouTube](https://www.youtube.com/channel/UCPMLP_iuTLQWxCVYFNt40WA) for more!
 
 <!--more-->
