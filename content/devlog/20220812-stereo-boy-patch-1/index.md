@@ -34,7 +34,7 @@ You can now quit the game from the pause menu. What a relief!
 
 ## Exit doors are now solid(-ish)
 
-Bullets and pushable blocks no longer pass through the exit door. There was a level or two this was actually an issue. Hope this doesn’t spoil your amazing speedrun strat!
+Bullets and pushable blocks no longer pass through the exit door. There's a level or two where this was actually an issue. Hope this doesn’t spoil your amazing speedrun strat!
 
 ## Cross-platform mouse sensitivity support
 
