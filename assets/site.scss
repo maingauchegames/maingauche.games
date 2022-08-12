@@ -23,6 +23,10 @@ a:active {
   color: rgb(39, 145, 225);
 }
 
+h1 {
+  line-height: 1.2em;
+}
+
 hr {
   margin-top: 2em;
   margin-bottom: 2em;
@@ -37,4 +41,8 @@ footer {
   margin-top: 30px;
   color: #aaaabb;
   font-size: 12px;
+}
+
+video {
+  width: 100%;
 }
