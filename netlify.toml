@@ -1,6 +1,5 @@
 [build]
 publish = "public"
-command = "hugo --gc --minify"
 
 [build.environment]
   NODE_VERSION = "12"
