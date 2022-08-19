@@ -12,7 +12,7 @@ description: Seeing double
 
 Dominic here!
 
-The marquee feature of Stereo Boy is the ability to teleport between two worlds on each side of the screen. But how do we do it? I want to give a quick breakdown of our technical set up, from level design to camera setup to gameplay effects.
+The marquee feature of Stereo Boy is the ability to teleport between two worlds on each side of the screen. But how do we do it? I want to give a quick breakdown of our technical set up, from level design to camera setup to gameplay effects. Throughout development, we took advantage of the flexibility of [Unity's](https://unity.com/) editor and camera systems to meet our (sometimes highly specific) needs.
 
 ## Building a Dual-Level
 
@@ -22,7 +22,7 @@ This setup, while simple, still presented some challenges of its own: we couldn'
 
 ### SceneView Camera Syncing
 
-For the first problem, we settled on a Unity editor layout that used two Scene views in a layout very similar to our actual game display. In an editor script, we added a special callback to the `SceneView` object's `duringSceneGui` listener. We used this callback to sync the camera position and orientation of the two views as we edited. The short version of the algorithm is as follows:
+For the first problem, we settled on a Unity editor layout that used two Scene views in a layout very similar to our actual game display. In an editor script, we added a special callback to the `SceneView` object's [`duringSceneGui`](https://docs.unity3d.com/ScriptReference/SceneView-duringSceneGui.html) listener. We used this callback to sync the camera position and orientation of the two views as we edited. The short version of the algorithm is as follows:
 
 * Check if there are exactly two SceneViews, and that we're operating on the inactive one (`SceneView.lastActiveSceneView` provides a quick check for this!)
 * Grab the active scene view's offset from it's game world origin
