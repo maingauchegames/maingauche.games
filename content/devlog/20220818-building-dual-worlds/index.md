@@ -70,10 +70,16 @@ Additionally, we need to handle a wide variety of aspect ratios in this split sc
 
 ## Communicating the Current World
 
-* global volume
-* teleport fx
-* in/out animated feedback
+Lastly, we wanted to make sure there was a clear transition from one world to the other when the player teleports. Just as each world half has its own camera, each one also has its own lighting and a global volume. To avoid collisions, we enable and disable each camera's lights conditionally in using [URP's beginCameraRendering](https://docs.unity3d.com/ScriptReference/Rendering.RenderPipelineManager-beginCameraRendering.html) delegate:
+
+![](./camera-lighting-code.png)
+
+ Using [Feel from MoreMountains](https://feel.moremountains.com), we animate each camera's lights and global volume properties when the player triggers a teleport transition from one world to the other. The main light in each scene animates to give the shadows that quick look of elongating or shortening as the player moves with them, and the global volume turns down the saturation for the inactive world while popping in with a CRT-like effect on the active world. All put together, it looks like this:
+
+{{< video-tag "./teleport-loop.mp4" >}}
+
+Subtle, but it helps draw the eye to the correct side of the screen as the player switches back and forth.
 
 ---
 
-Thanks for reading! We'd love to hear any questions you have about our setup, or share any particular chunk of code that's interesting. We're excited to share more about our block-based level editing tools in an upcoming devlog.
+Thanks for reading! We'd love to hear any questions you have about our setup, or go deeper on any particular chunk of code that's interesting - feel free to reach out on [Twitter](http://maingauche.games/stereoboy/twitter), [Discord](http://maingauche.games/stereoboy/discord) or [email](mailto:info@maingauche.games)! We're excited to share more about our block-based level editing tools in an upcoming devlog.
