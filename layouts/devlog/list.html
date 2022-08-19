@@ -18,6 +18,9 @@
           </span>
         </p>
         <div>
+          {{ if .Params.image }}
+          <div><img src="{{.Params.image}}"></div>
+          {{ end }}
           <div>{{.Summary}}</div>
           <a class="button" href="{{.RelPermalink}}">Keep Reading →</a>
         </div>
