@@ -1,5 +1,5 @@
 ---
-title: Stereo Boy software update 20220812.d2b5
+title: Stereo Boy software update 20220818.d2b5
 date: 2022-08-18
 draft: false
 tags:
