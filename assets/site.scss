@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Coda&Source+Sans+Pro&display=swap');
 
 body {
   max-width: 650px;
@@ -8,6 +8,15 @@ body {
   color: #20252d;
   font-family: "Source Sans Pro", "Helvetica Neue", "Helvetica", "Arial", "sans-serif";
   line-height: 1.5em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Coda', 'Times New Roman', Times, serif;
 }
 
 #content {
@@ -20,7 +29,7 @@ a,
 a:hover,
 a:visited,
 a:active {
-  color: rgb(39, 145, 225);
+  color: rgb(36, 170, 201);
 }
 
 h1 {
@@ -45,4 +54,34 @@ footer {
 
 video {
   width: 100%;
+}
+
+// Post list
+
+.preview-list-item {
+  &:after {
+    display: block;
+    content: "";
+    width: 50%;
+    margin: 0 auto;
+    padding-bottom: 40px;
+    border-bottom: 1px solid rgb(106, 180, 236);
+    margin-bottom: 40px;
+  }
+
+  .post-title {
+    h3 {
+      margin: 0;
+    }
+
+    .post-date {
+      margin-bottom: 20px;
+      color: #777;
+    }
+
+    a {
+      text-decoration: none;
+      color: rgb(36, 170, 201);
+    }
+  }
 }

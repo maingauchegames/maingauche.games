@@ -1,8 +1,8 @@
 ---
 title: "Making Dual Worlds - Stereo Boy Devlog #2"
-date: 2022-08-18
+date: 2022-08-22
 draft: true
-image: 20220818-building-dual-worlds/poster.png
+image: /devlog/20220818-building-dual-worlds/poster.png
 tags:
 - stereoboy
 description: Seeing double

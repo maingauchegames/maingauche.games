@@ -12,19 +12,17 @@
         <h3>
           <a href="{{.RelPermalink}}">{{.Title}}</a>
         </h3>
-        <p>
-          <span class="post-date">
-            {{.Date.Format "January 2, 2006"}}
-          </span>
-        </p>
-        <div>
-          {{ if .Params.image }}
-          <div><img src="{{.Params.image}}"></div>
-          {{ end }}
-
-          <div>{{.Summary}}</div>
-          <a class="button" href="{{.RelPermalink}}">Keep Reading →</a>
+        <div class="post-date">
+          {{.Date.Format "January 2, 2006"}}
         </div>
+      </div>
+      <div>
+        {{ if .Params.image }}
+        <div><img src="{{.Params.image}}"></div>
+        {{ end }}
+
+        <div>{{.Summary}}</div>
+        <a class="button" href="{{.RelPermalink}}">Keep Reading →</a>
       </div>
     </article>
     {{ end }}
