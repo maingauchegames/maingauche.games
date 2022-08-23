@@ -118,5 +118,9 @@ pre {
 
   li {
     display: inline;
+
+    &:after {
+      content: " "
+    }
   }
 }
