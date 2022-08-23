@@ -1,3 +1,7 @@
 baseURL = "https://maingauche.games/"
 languageCode = "en-us"
 title = "Main Gauche Games"
+
+[markup]
+  [markup.highlight]
+    style = 'manni'

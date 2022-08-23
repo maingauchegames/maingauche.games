@@ -2,7 +2,12 @@
 <main id="main">
   <header>
     <h1 id="title">{{ .Title }}</h1>
-    <h4 id="date">{{ .Date.Format "January 2, 2006" }}</h4>
+    <h4 id="date">
+      {{ .Date.Format "January 2, 2006" }}
+      {{ if isset .Params "author" }}
+      ⸱ by {{ index .Params "author" | .RenderString }}
+      {{ end }}
+    </h4>
   </header>
 
   <article id="content">
