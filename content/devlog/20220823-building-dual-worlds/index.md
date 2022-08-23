@@ -1,8 +1,8 @@
 ---
 title: "Making Stereo Boy's dual worlds"
-date: 2022-08-22
+date: 2022-08-23
 draft: true
-image: /devlog/20220818-building-dual-worlds/poster.png
+image: /devlog/20220823-building-dual-worlds/poster.png
 tags:
 - stereoboy
 - unity

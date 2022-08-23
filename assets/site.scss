@@ -4,6 +4,7 @@ body {
   max-width: 650px;
   margin: 0 auto 0 auto;
   font-size: 18px;
+  -webkit-text-size-adjust: 100%;
   padding: 20px;
   color: #20252d;
   font-family: "Source Sans Pro", "Helvetica Neue", "Helvetica", "Arial", "sans-serif";
@@ -16,7 +17,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Coda', "Helvetica Neue", "Helvetica", "Arial", "sans-serif";
+  font-family: "Source Sans Pro", "Helvetica Neue", "Helvetica", "Arial", "sans-serif";
 }
 
 #content {
@@ -60,6 +61,7 @@ pre {
   padding: 10px;
   font-size: 12px;
   line-height: 1.5em;
+  overflow-x: scroll;
 }
 
 // Post list
@@ -89,5 +91,16 @@ pre {
       text-decoration: none;
       color: rgb(36, 170, 201);
     }
+  }
+}
+
+.devlog-single {
+  #title {
+    margin-bottom: 0;
+  }
+
+  #date {
+    margin-bottom: 20px;
+    color: #777;
   }
 }

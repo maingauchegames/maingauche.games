@@ -1,13 +1,13 @@
 {{ define "main" }}
-<main id="main">
+<main id="main" class="devlog-single">
   <header>
     <h1 id="title">{{ .Title }}</h1>
-    <h4 id="date">
+    <div id="date">
       {{ .Date.Format "January 2, 2006" }}
       {{ if isset .Params "author" }}
       ⸱ by {{ index .Params "author" | .RenderString }}
       {{ end }}
-    </h4>
+    </div>
   </header>
 
   <article id="content">
