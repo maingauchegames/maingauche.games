@@ -15,12 +15,12 @@
   </article>
 </main>
 
-<aside>
+<aside id="tags">
   <h4>Tags</h4>
   {{ with .Params.tags }}
-  <ul id="tags">
+  <ul>
     {{ range . }}
-    <li><a href='{{ "tags/" | absURL }}{{ . | urlize }}'>{{ . }}</a></li>
+    <li><a href='{{ "tags/" | absURL }}{{ . | urlize }}'>#{{ . }}</a></li>
     {{ end }}
   </ul>
   {{ end }}

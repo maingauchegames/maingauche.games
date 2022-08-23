@@ -96,11 +96,27 @@ pre {
 
 .devlog-single {
   #title {
-    margin-bottom: 0;
+    margin-bottom: 5px;
+    line-height: 1.1;
   }
 
   #date {
     margin-bottom: 20px;
     color: #777;
+  }
+}
+
+#tags {
+  h4 {
+    margin-bottom: 0;
+  }
+
+  ul {
+    margin-top: 0;
+    padding: 0;
+  }
+
+  li {
+    display: inline;
   }
 }
