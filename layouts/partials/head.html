@@ -5,9 +5,9 @@
 
 <meta property="og:title" content="{{ .Title }} - Main Gauche Games" />
 <meta property="og:description" content="{{ .Description }}" />
-{{ if isset .Params "video" }}
-<meta property="og:video" content="{{ .Params.video }}" />
-{{ else if isset .Params "image" }}
-<meta property="og:image" content="{{ .Params.image }}" />
+{{ if isset .Params "metavideo" }}
+<meta property="og:video" content="{{ .Params.metavideo }}" />
+{{ else if isset .Params "metaimage" }}
+<meta property="og:image" content="{{ .Params.metaimage }}" />
 {{ end }}
 <meta name="twitter:card" content="summary_large_image" />

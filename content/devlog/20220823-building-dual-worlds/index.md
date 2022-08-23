@@ -2,7 +2,8 @@
 title: "Making Stereo Boy's dual worlds"
 date: 2022-08-23
 image: /devlog/20220823-building-dual-worlds/poster.png
-video: /devlog/20220823-building-dual-worlds/camera-sync-sm.mov
+metaimage: /devlog/20220823-building-dual-worlds/targeting-bug.jpg
+# metavideo: /devlog/20220823-building-dual-worlds/camera-sync-sm.mov
 tags:
 - stereoboy
 - unity
