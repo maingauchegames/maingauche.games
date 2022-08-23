@@ -2,3 +2,12 @@
 {{ $style := resources.Get "site.scss" | resources.ToCSS | resources.Minify | resources.Fingerprint }}
 <link rel="stylesheet" href="{{ $style.RelPermalink }}">
 <meta name="viewport" content="initial-scale=1, viewport-fit=cover">
+
+<meta property="og:title" content="{{ .Title }} - Main Gauche Games" />
+<meta property="og:description" content="{{ .Description }}" />
+{{ if isset .Params "video" }}
+<meta property="og:video" content="{{ .Params.video }}" />
+{{ else if isset .Params "image" }}
+<meta property="og:image" content="{{ .Params.image }}" />
+{{ end }}
+<meta name="twitter:card" content="summary_large_image" />
