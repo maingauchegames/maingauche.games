@@ -16,6 +16,8 @@ author: "[Dominic](https://twitter.com/dddagradi)"
 
 Stereo Boy's core mechanic is the ability to teleport between two worlds on either side of the screen. This post is a breakdown of how we implemented this unusual feature, across our tools, runtime cameras, and gameplay effects. We took advantage of the flexibility of [Unity's](https://unity.com/) editor and camera systems to meet our highly-specific needs.
 
+<!--more-->
+
 ## A quick look at the gameplay
 
 Stereo Boy has an unusual camera setup for a single-player game.
