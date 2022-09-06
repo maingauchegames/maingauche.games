@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Coda&Source+Sans+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
 
 body {
-  max-width: 650px;
+  max-width: 800px;
   margin: 0 auto 0 auto;
   font-size: 18px;
   -webkit-text-size-adjust: 100%;
@@ -59,9 +60,28 @@ video {
 
 pre {
   padding: 10px;
-  font-size: 12px;
+  overflow-x: auto;
+}
+
+code {
+  font-family: Inconsolata, monospace;
+  font-size: 0.9em;
   line-height: 1.5em;
-  overflow-x: scroll;
+}
+
+// For inline code tags (used in Markdown backticks)
+:not(pre) > code {
+  padding: 0 2px 0 2px;
+  background-color: #f0f3f3; // used in Hugo's manni theme for code blocks
+}
+
+// Prevent superscripts (used in Markdown footnotes) from affecting line height
+sup {
+  vertical-align: top;
+  position: relative;
+  top: -0.4em;
+  font-size: 0.7em;
+  font-weight: bold;
 }
 
 // Post list
