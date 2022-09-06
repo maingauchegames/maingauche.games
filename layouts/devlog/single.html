@@ -11,6 +11,10 @@
   </header>
 
   <article id="content">
+    {{ if .Params.image }}
+    <div><img src="{{.Params.image}}"></div>
+    {{ end }}
+
     {{ .Content }}
   </article>
 </main>
