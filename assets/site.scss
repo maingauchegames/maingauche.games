@@ -54,8 +54,15 @@ footer {
   font-size: 12px;
 }
 
-video {
+video, figure {
+  display: block;
   width: 100%;
+}
+
+video.narrow, figure.narrow {
+  margin-left: auto;
+  margin-right: auto;
+  width: 66%;
 }
 
 pre {
