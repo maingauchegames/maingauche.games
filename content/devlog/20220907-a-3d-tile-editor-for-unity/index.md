@@ -1,8 +1,8 @@
 ---
 title: "A 3D tile editor for Unity"
 date: 2022-09-07
-image: /devlog/20220907-a-3d-tile-editor-for-unity/poster.png
-metaimage: /devlog/20220907-a-3d-tile-editor-for-unity/poster.png
+image: /devlog/20220907-a-3d-tile-editor-for-unity/poster.jpg
+metaimage: /devlog/20220907-a-3d-tile-editor-for-unity/poster.jpg
 draft: false
 tags:
 - stereoboy
