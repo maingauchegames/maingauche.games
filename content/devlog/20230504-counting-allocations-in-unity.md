@@ -42,6 +42,6 @@ Peeking under the lid, you can see that the allocation test constraint boils dow
 
 `AllocCounter` is a handy tool that I look forward to using when the bell tolls and I’m finally asked to account for my reckless use of Linq and `IEnumerable` in our game code. But before that day comes, I also enjoy using it to discover some fun trivia about C#. For example, did you know that creating a [value tuple](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/value-tuples) like `(1, true, "foo")` actually *does* allocate memory? You get exactly _one_ allocation_ the first time you create a tuple with a particular type signature. My theory is that it’s allocating some kind of type descriptor or metaclass-like thing so the runtime knows what to do with the value in certain contexts.
 
-Discuss on [Discord](http://maingauche.games/discord) and [Reddit](). We'd love to hear from you!
+Discuss on [Discord](http://maingauche.games/discord) and [Reddit](https://www.reddit.com/r/Unity3D/comments/137v1s5/counting_allocations_in_unity/). We'd love to hear from you!
 
 [^1]: Consider that one of the C# designers has an article about the language called ["The stack is an implementation detail"](https://learn.microsoft.com/en-us/archive/blogs/ericlippert/the-stack-is-an-implementation-detail-part-one).
