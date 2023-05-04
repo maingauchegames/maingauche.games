@@ -27,7 +27,7 @@ var allocCount = AllocCounter.Instrument(() => {
 
 <!--more-->
 
-Why would you want this? Spend any amount of time in a Unity forum and you’ll find someone loudly warning you to eliminate frame-over-frame allocations from your code. This is probably good advice, but also a particularly masochistic proposition given that we’re using C#, a language that often seems purpose-built for making allocations.[^1]
+Why would you want this? Spend any amount of time in a Unity forum and you’ll find someone loudly admonishing you to eliminate frame-over-frame allocations from your code. This is probably good advice, but also a particularly masochistic proposition given that we’re using C#, a language that often seems purpose-built for making allocations.[^1]
 
 How one goes about eliminating allocations is largely a matter of finding them in the first place, and on this topic, the advice comes with far less bravado and far more hand-waving. As far as I can tell, solutions fall into one of two camps:
 
@@ -40,7 +40,7 @@ In this era of forum bitrot, decaying search engines, and even worse AI suggesti
 
 Peeking under the lid, you can see that the allocation test constraint boils down to a [scant 4-5 lines of code](https://github.com/gregoirerosier/GAME-DEV/blob/ef217db2a5de51b54e5ed5399b10a745b84d6387/AllocatingGCMemoryConstraint.cs#L27-L55) that are 100% portable to a runtime context. Indeed, `AllocCounter` is little more than a copy/paste. It turns out the Just Use The Profiler camp was correct, sorta: this trick relies on some instruments exposed by the profiler _library_.
 
-`AllocCounter` is a handy tool that I look forward to using when the bell tolls and I’m finally asked to account for my reckless use of Linq and `IEnumerable` in our game code. But before that day comes, I also enjoy using it to discover some fun trivia about C#. For example, did you know that creating a [value tuple](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/value-tuples) like `(1, true, "foo")` actually *does* allocate memory? You get exactly _one_ allocation_ the first time you create a tuple with a particular type signature. My theory is that it’s allocating some kind of type descriptor or metaclass-like thing so the runtime knows what to do with the value in certain contexts.
+`AllocCounter` is a handy tool that I look forward to using when the bell tolls and I’m finally asked to account for my reckless use of Linq and `IEnumerable` in our game code. But before that day comes, I also enjoy using it to discover some fun trivia about C#. For example, did you know that creating a [value tuple](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/value-tuples) like `(1, true, "foo")` actually *does* allocate memory? You get exactly _one_ allocation the first time you create a tuple with a particular type signature. My theory is that it’s allocating some kind of type descriptor or metaclass-like thing so the runtime knows what to do with the value in certain contexts.
 
 Discuss on [Discord](http://maingauche.games/discord) and [Reddit](https://www.reddit.com/r/Unity3D/comments/137v1s5/counting_allocations_in_unity/). We'd love to hear from you!
 
