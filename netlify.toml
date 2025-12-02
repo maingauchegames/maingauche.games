@@ -7,7 +7,7 @@ publish = "public"
   YARN_FLAGS = "--no-ignore-optional"
 
 [context.production.environment]
-HUGO_VERSION = "0.111.3"
+HUGO_VERSION = "v0.152.2"
 
 [context.deploy-preview.environment]
-HUGO_VERSION = "0.111.3"
+HUGO_VERSION = "v0.152.2"

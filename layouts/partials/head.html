@@ -8,7 +8,7 @@
 </script>
 
 <title>{{ .Title }}</title>
-{{ $style := resources.Get "site.scss" | resources.ToCSS | resources.Minify | resources.Fingerprint }}
+{{ $style := resources.Get "site.scss" | css.Sass | resources.Minify | resources.Fingerprint }}
 <link rel="stylesheet" href="{{ $style.RelPermalink }}">
 <meta name="viewport" content="initial-scale=1, viewport-fit=cover">
 
